@@ -1,0 +1,29 @@
+{
+  "name": "verbose-model",
+  "version": "0.0.1",
+  "description": "Verbose Model",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "manual": "npm version patch -m \"Version %s\" && git push && git push --tags",
+    "release": "standard-version --release-as patch && git push --follow-tags origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verbosejs/verbose-model.git"
+  },
+  "author": "Matthew Ward <iammatthewward@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/verbosejs/verbose-model/issues"
+  },
+  "homepage": "https://github.com/verbosejs/verbose-model#readme",
+  "dependencies": {
+    "debug": "^2.6.8"
+  },
+  "devDependencies": {
+    "coveralls": "^2.13.1",
+    "jest": "^20.0.3",
+    "standard-version": "^4.0.0"
+  }
+}
